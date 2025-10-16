@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geyik Kafe Dijital Menü</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f4ee;
+      color: #3b2f2f;
+    }
+    header {
+      background-color: #7b5e57;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+    .card:hover { transform: scale(1.03); }
+    .card img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+    }
+    .card p {
+      text-align: center;
+      margin: 10px 0;
+      font-weight: bold;
+      color: #4a2f2f;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>Geyik Kafe Dijital Menü</header>
+
+  <div class="menu-grid">
+    <div class="card" onclick="window.location.href='sicak.html'">
+      <img src="menüfoto/sicakicecekler.png" alt="Sıcak İçecekler">
+      <p>☕ Sıcak İçecekler</p>
+    </div>
+    <div class="card" onclick="window.location.href='soguk.html'">
+      <img src="menüfoto/sogukicecekler.png" alt="Soğuk İçecekler">
+      <p>🧊 Soğuk İçecekler</p>
+    </div>
+    <div class="card" onclick="window.location.href='yemekler.html'">
+      <img src="menüfoto/yemekler.png" alt="Yemekler">
+      <p>🍳 Yemekler</p>
+    </div>
+    <div class="card" onclick="window.location.href='tatlilar.html'">
+      <img src="menüfoto/tatlilar.png" alt="Tatlılar">
+      <p>🍰 Tatlılar</p>
+    </div>
+    <div class="card" onclick="window.location.href='atistirmaliklar.html'">
+      <img src="menüfoto/atistirmaliklar.png" alt="Atıştırmalıklar">
+      <p>🍟 Atıştırmalıklar</p>
+    </div>
+  </div>
+
+</body>
+</html>

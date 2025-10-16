@@ -1,0 +1,101 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f4ee;
+  color: #3b2f2f;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #7b5e57;
+  color: white;
+  padding: 15px 0;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  color: #3b2f2f;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.card p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.menu-list {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.menu-info {
+  flex: 1;
+}
+
+.menu-info h3 {
+  margin: 0;
+}
+
+.menu-info p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.menu-price {
+  font-weight: bold;
+  color: #7b5e57;
+}
+
+.back {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  color: #7b5e57;
+  font-weight: bold;
+  text-decoration: none;
+}
